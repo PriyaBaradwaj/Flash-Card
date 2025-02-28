@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e6fa;
+    color: #4e2a84;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #7c4d9e;
+  }
+
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #d0a4e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #7c4d9e;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #5e3888;
+  }
+
+  .gap {
+    margin-top: 30px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #7c4d9e;
+  }
+
+  .flashcard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .flashcard {
+    background-color: #e8c5e5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flashcard button {
+    background-color: #5e3888;
+    padding: 5px 10px;
+    margin-left: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .flashcard button:hover {
+    background-color: #3d2661;
+  }
+
+  .edit-delete-buttons {
+    display: flex;
+    gap: 10px;
+  }

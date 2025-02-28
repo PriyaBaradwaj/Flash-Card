@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Flashcard App</h1>
+
+  <!-- Home Page: Add Flashcards -->
+  <div id="home-page" class="container">
+    <h2>Create New Flashcard</h2>
+    <input type="text" id="title" placeholder="Enter flashcard title">
+    <textarea id="notes" placeholder="Enter flashcard notes"></textarea>
+    <textarea id="question" placeholder="Enter question"></textarea>
+    <textarea id="answer" placeholder="Enter answer"></textarea>
+    <button class="button" onclick="addFlashcard()">Add Flashcard</button>
+    <div class="gap"></div>
+    <button class="button" onclick="viewAllFlashcards()">View All Flashcards</button>
+  </div>
+
+  <!-- All Flashcards Page -->
+  <div id="flashcard-list-page" class="container" style="display: none;">
+    <h2>All Flashcards</h2>
+    <div class="flashcard-container" id="flashcard-list"></div>
+    <div class="gap"></div>
+    <button class="button" onclick="goHome()">Home</button>
+  </div>
+
+  <!-- Edit Flashcard Page -->
+  <div id="edit-flashcard-page" class="container" style="display: none;">
+    <h2>Edit Flashcard</h2>
+    <input type="text" id="edit-title" placeholder="Enter flashcard title">
+    <textarea id="edit-notes" placeholder="Enter flashcard notes"></textarea>
+    <textarea id="edit-question" placeholder="Enter question"></textarea>
+    <textarea id="edit-answer" placeholder="Enter answer"></textarea>
+    <button class="button" onclick="saveEditedFlashcard()">Save Changes</button>
+    <button class="button" onclick="goHome()">Cancel</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
